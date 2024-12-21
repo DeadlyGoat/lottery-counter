@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Container */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Form and Input Styles */
+#counter, #addInSection {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* History Section */
+#history {
+    margin-top: 20px;
+}
+
+#historyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.denomination-section {
+    flex: 1 1 calc(50% - 20px);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.denomination-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+.denomination-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.denomination-section ul li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.denomination-section ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Totals Section */
+#totals {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#totals h2 {
+    margin-bottom: 15px;
+}
+
+#totals ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+#totals ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+#totals p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Reset Button */
+#resetButton {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+#resetButton:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .denomination-section {
+        flex: 1 1 100%;
+    }
+}

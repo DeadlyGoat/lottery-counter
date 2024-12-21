@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Counter System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lottery Ticket Counter</h1>
+    </header>
+    <main>
+        <div id="counter">
+            <label for="denomination">Select Denomination:</label>
+            <select id="denomination">
+                <option value="2">$2</option>
+                <option value="3">$3</option>
+                <option value="4">$4</option>
+                <option value="5">$5</option>
+                <option value="10">$10</option>
+                <option value="20">$20</option>
+                <option value="30">$30</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+            </select>
+            <br>
+            <label for="ticketCount">Enter Ticket Count:</label>
+            <input type="number" id="ticketCount" placeholder="Enter count" min="0">
+            <button id="addButton">Add</button>
+            
+            <div id="history">
+                <h3>History of Entries for All Denominations</h3>
+                <div id="historyContainer">
+                    <!-- Dynamic histories will be added here -->
+                </div>
+            </div>
+            <button id="resetButton">Reset All Totals</button>
+            <button id="exportButton">Export Data</button>
+
+
+            
+
+        </div>
+        <div id="totals">
+            <h2>Running Totals</h2>
+            <ul id="totalsList"></ul>
+            <p><strong>Grand Total:</strong> <span id="grandTotal">0</span> Tickets | $<span id="grandValue">0</span></p>
+        </div>
+      
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
